@@ -206,11 +206,11 @@
                 const findProduct = products.find(product => {
                     return product.id === +card.getAttribute('id');
                 })
-                setIntervalId = setInterval(async () => {
-                    await card.classList.remove('active');
+                setIntervalId = setInterval(async() => {
+                    card.classList.remove('active');
                     index++;
                     index === findProduct.images.length ? index = 0 : index;
-                    setTimeout(() => {
+                    await setTimeout(() => {
                         card.classList.add('active');
                         img.src = findProduct.images[index];
                     }, 100)
