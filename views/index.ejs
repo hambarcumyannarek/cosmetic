@@ -210,10 +210,7 @@
                     card.classList.remove('active');
                     index++;
                     index === findProduct.images.length ? index = 0 : index;
-                    await setTimeout(() => {
-                        card.classList.add('active');
-                        img.src = findProduct.images[index];
-                    }, 100)
+                    card.classList.add('active');
                 }, 1500)
             })
 
