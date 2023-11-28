@@ -207,10 +207,8 @@
                     return product.id === +card.getAttribute('id');
                 })
                 setIntervalId = setInterval(() => {
-                    card.classList.remove('active');
                     index++;
                     index === findProduct.images.length ? index = 0 : index;
-                    card.classList.add('active');
                     img.src = findProduct.images[index];
                 }, 1500)
             })
