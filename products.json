@@ -1,0 +1,220 @@
+[
+    {
+        "id": 1,
+        "images": [
+            "./images/img1/productImage1.jpg",
+            "./images/img1/productImage2.jpg",
+            "./images/img1/productImage3.jpg",
+            "./images/img1/productImage4.jpg"
+        ],
+        "name": "cardName-1",
+        "type": "krem",
+        "price": 150
+    },
+    {
+        "id": 2,
+        "images": [
+            "./images/img2/productImage1.jpg",
+            "./images/img2/productImage2.jpg",
+            "./images/img2/productImage3.jpg"
+        ],
+        "name": "cardName-2",
+        "type": "pamada",
+        "price": 396
+    },
+    {
+        "id": 3,
+        "images": [
+            "./images/img3/productImage1.jpg",
+            "./images/img3/productImage2.jpg",
+            "./images/img3/productImage3.jpg",
+            "./images/img3/productImage4.jpg"
+        ],
+        "name": "cardName-3",
+        "type": "pamada",
+        "price": 333
+    },
+    {
+        "id": 4,
+        "images": [
+            "./images/img4/productImage1.jpg",
+            "./images/img4/productImage2.jpg",
+            "./images/img4/productImage3.jpg"
+        ],
+        "name": "cardName-4",
+        "type": "matit",
+        "price": 555
+    },
+    {
+        "id": 5,
+        "images": [
+            "./images/img5/productImage1.jpg",
+            "./images/img5/productImage2.jpg"
+        ],
+        "name": "cardName-5",
+        "type": "box",
+        "price": 785
+    },
+    {
+        "id": 6,
+        "images": [
+            "./images/img6/productImage1.jpg",
+            "./images/img6/productImage2.jpg"
+        ],
+        "name": "cardName-6",
+        "type": "box",
+        "price": 598
+    },
+    {
+        "id": 7,
+        "images": [
+            "./images/img7/productImage1.jpg",
+            "./images/img7/productImage2.jpg"
+        ],
+        "name": "cardName-7",
+        "type": "box",
+        "price": 785
+    },
+    {
+        "id": 8,
+        "images": [
+            "./images/img8/productImage1.jpg",
+            "./images/img8/productImage2.jpg"
+        ],
+        "name": "cardName-8",
+        "type": "pamada",
+        "price": 570
+    },
+    {
+        "id": 9,
+        "images": [
+            "./images/img9/productImage1.jpg",
+            "./images/img9/productImage2.jpg"
+        ],
+        "name": "cardName-9",
+        "type": "krem",
+        "price": 777
+    },
+    {
+        "id": 10,
+        "images": [
+            "./images/img10/productImage1.jpg",
+            "./images/img10/productImage2.jpg",
+            "./images/img10/productImage3.jpg",
+            "./images/img10/productImage4.jpg"
+        ],
+        "name": "cardName-10",
+        "type": "box",
+        "price": 999
+    },
+    {
+        "id": 11,
+        "images": [
+            "./images/img11/productImage1.jpg",
+            "./images/img11/productImage2.jpg",
+            "./images/img11/productImage3.jpg"
+        ],
+        "name": "cardName-11",
+        "type": "pamada",
+        "price": 65
+    },
+    {
+        "id": 12,
+        "images": [
+            "./images/img12/productImage1.jpg",
+            "./images/img12/productImage2.jpg",
+            "./images/img12/productImage3.jpg"
+        ],
+        "name": "cardName-12",
+        "type": "matit",
+        "price": 777
+    },
+    {
+        "id": 13,
+        "images": [
+            "./images/img13/productImage1.jpg",
+            "./images/img13/productImage2.jpg",
+            "./images/img13/productImage3.jpg"
+        ],
+        "name": "cardName-13",
+        "type": "pamada",
+        "price": 1350
+    },
+    {
+        "id": 14,
+        "images": [
+            "./images/img14/productImage1.jpg",
+            "./images/img14/productImage2.jpg",
+            "./images/img14/productImage3.jpg",
+            "./images/img14/productImage4.jpg"
+        ],
+        "name": "cardName-14",
+        "type": "krem",
+        "price": 880
+    },
+    {
+        "id": 15,
+        "images": [
+            "./images/img15/productImage1.jpg",
+            "./images/img15/productImage2.jpg",
+            "./images/img15/productImage3.jpg"
+        ],
+        "name": "cardName-15",
+        "type": "box",
+        "price": 440
+    },
+    {
+        "id": 16,
+        "images": [
+            "./images/img16/productImage1.jpg",
+            "./images/img16/productImage2.jpg",
+            "./images/img16/productImage3.jpg"
+        ],
+        "name": "cardName-16",
+        "type": "shampun",
+        "price": 770
+    },
+    {
+        "id": 17,
+        "images": [
+            "./images/img17/productImage1.jpg",
+            "./images/img17/productImage2.jpg",
+            "./images/img17/productImage3.jpg"
+        ],
+        "name": "cardName-17",
+        "type": "shampun",
+        "price": 1150
+    },
+    {
+        "id": 18,
+        "images": [
+            "./images/img18/productImage1.jpg",
+            "./images/img18/productImage2.jpg"
+        ],
+        "name": "cardName-18",
+        "type": "maska",
+        "price": 150
+    },
+    {
+        "id": 19,
+        "images": [
+            "./images/img19/productImage1.jpg",
+            "./images/img19/productImage2.jpg",
+            "./images/img19/productImage3.jpg"
+        ],
+        "name": "cardName-19",
+        "type": "shampun",
+        "price": 630
+    },
+    {
+        "id": 20,
+        "images": [
+            "./images/img20/productImage1.jpg",
+            "./images/img20/productImage2.jpg",
+            "./images/img20/productImage3.jpg"
+        ],
+        "name": "cardName-20",
+        "type": "ochar",
+        "price": 350
+    } 
+]

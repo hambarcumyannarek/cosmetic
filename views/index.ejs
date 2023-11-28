@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Larisa</title>
+    <!-- ------ css ------ -->
+    <link rel="stylesheet" href="./css/index.css">
+
+    <!-- ------- font-aweson ---------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <a class="logo" href="/home">
+                <img src="./images/logo1.png" alt="logo">
+                <h3>CosmeticL</h3>
+            </a>
+            <ul class="links">
+                <li><a href="#">link-1</a></li>
+                <li><a href="#">link-2</a></li>
+                <li><a href="#">link-3</a></li>
+                <li><a href="#">link-4</a></li>
+            </ul>
+            <ul class="icons">
+                <li><i class="fa-regular fa-heart"></i></li>
+                <li><i class="fa-solid fa-cart-shopping"></i></li>
+                <li><i class="fa-regular fa-user"></i></li>
+                <li class="menuBtn"><i class="fa-solid fa-bars"></i></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="responsiveMenu">
+        <div class="aside">
+            <div class="top">
+                <a class="logo" href="/home">
+                    <img src="./images/logo1.png" alt="logo">
+                    <h3>CosmeticL</h3>
+                </a>
+                <i class="fa-solid fa-xmark closeRespMenu"></i>
+            </div>
+            <ul class="links">
+                <a href="#">link-1</a>
+                <a href="#">link-2</a>
+                <a href="#">link-3</a>
+                <a href="#">link-4</a>
+            </ul>
+            <div class="bottom">
+                <div class="icons">
+                    <div class="icon"><i class="fa-brands fa-facebook-f"></i></div>
+                    <div class="icon"><i class="fa-solid fa-phone"></i></div>
+                    <div class="icon"><i class="fa-brands fa-instagram"></i></div>
+                </div>
+                <p>Samsa was a travelling salesman - and above it there hung a picture that he had recently cut out of
+                    an illustrated magazine and housed in a nice, gilded frame.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="hero" class="section">
+        <div class="container">
+            <div class="content">
+                <h1>This Is a <span>Larisas's</span> <br>
+                    Cosmetics Online Shop</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis nemo aliquid, culpa eaque minus
+                    incidunt officia ad cumque quisquam iste ut quo sint non nostrum repudiandae reiciendis minima
+                    aspernatur hic optio quod! A reiciendis aliquid, sequi, nisi, optio animi natus ratione obcaecati
+                    quod saepe iste.</p>
+
+                <button>Shop Now</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="allRouters">
+        <div class="container">
+            <div class="card">
+                <div class="img">
+                    <img src="./images/allType/img1.png" alt="1">
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="./images/allType/img2.png" alt="2">
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="./images/allType/img3.png" alt="3">
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="./images/allType/img4.png" alt="4">
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="./images/allType/img5.png" alt="5">
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="./images/allType/img6.png" alt="6">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="about" class="section">
+        <div class="container">
+            <div class="image">
+                <img src="./images/about.jpg" alt="about">
+            </div>
+            <div class="content">
+                <div class="title">
+
+                </div>
+                <h2>About <span>Us</span></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem quas nostrum, repellat impedit nesciunt
+                    provident in corrupti recusandae quo, minima facere quaerat? Quidem recusandae, cumque, obcaecati ut
+                    deleniti odit omnis placeat tenetur inventore eius,<br> ab porro itaque enim doloribus laboriosam?
+                    Eligendi quaerat saepe molestias et pariatur quis nemo quasi similique quae optio, assumenda
+                    possimus soluta expedita magni reiciendis porro provident.</p>
+                <button>Read More</button>
+                <div class="cards">
+                    <div class="card">
+                        <i class="fa-solid fa-address-card"></i>
+                        <h3>Address Card</h3>
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-award"></i>
+                        <h3>Award Card</h3>
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-gift"></i>
+                        <h3>Present Card</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="shop" class="section">
+        <div class="container">
+            <div class="title">
+                <h2>Popular Products</h2>
+            </div>
+
+            <div class="boxes">
+                <% for(let i = 0; i < products.length; i++) { %>
+                    <div class="card" id="<%= products[i].id %>">
+                        <div class="img">
+                            <img src="<%= products[i].images[0] %>" alt="1">
+                        </div>
+                        <div class="content">
+                            <p><%= products[i].type %></p>
+                            <h3><%= products[i].name %></h3>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="bottom">
+                                <div class="price">$<span><%= products[i].price %></span></div>
+                                <button><i class="fa-solid fa-plus"></i> Add</button>
+                            </div>
+                        </div>
+                    </div>
+                <% } %>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="inputBox">
+        <div class="content">
+            <input type="email" placeholder="enter your email" title="email111@gmail.com">
+            <button>Send</button>
+        </div>
+    </div>
+
+    <div id="footerBottom">
+        <div class="container">
+            <p>© 2023 Your company. All rights reserved.</p>
+            <p>This Project was Made by <span>Larisa</span></p>
+        </div>
+    </div>
+
+    <script defer src="./scripts/navbar.js"></script>
+    <script>
+        const stringifyProducts = '<%- JSON.stringify(products)%>';
+        const products = JSON.parse(stringifyProducts);
+
+        let setIntervalId = undefined;
+        document.querySelectorAll('#shop .card').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                let index = 0;
+                const img = card.querySelector('img');
+                const findProduct = products.find(product => {
+                    return product.id === +card.getAttribute('id');
+                })
+                setIntervalId = setInterval(async () => {
+                    await card.classList.remove('active');
+                    index++;
+                    index === findProduct.images.length ? index = 0 : index;
+                    setTimeout(() => {
+                        card.classList.add('active');
+                        img.src = findProduct.images[index];
+                    }, 100)
+                }, 1500)
+            })
+
+            card.addEventListener('mouseleave', () => {
+                clearInterval(setIntervalId);
+            });
+        })
+    </script>
+</body>
+
+</html>
