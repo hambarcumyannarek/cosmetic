@@ -272,6 +272,150 @@ nav .container .icons .menuBtn {
   display: none;
 }
 
+#register {
+  width: 100%;
+  min-height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 10;
+  transition: all 0.5s;
+}
+#register.active {
+  opacity: 1;
+  visibility: visible;
+}
+#register.active .registerCont {
+  transform: translateY(0);
+  opacity: 1;
+}
+#register .registerCont {
+  max-width: 600px;
+  width: 100%;
+  background: var(--white);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  transform: translateY(-30px);
+  gap: 30px;
+  transition: 0.5s 0.3s;
+}
+#register .registerCont .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#register .registerCont .top .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+#register .registerCont .top .logo h3 {
+  font-size: 1.3em;
+  color: var(--web-color);
+}
+#register .registerCont .top .logo img {
+  width: 35px;
+  background-size: cover;
+}
+#register .registerCont .top i {
+  font-size: 1.6em;
+  color: var(--black);
+  cursor: pointer;
+  transition: all 0.5s;
+}
+#register .registerCont .top i:hover {
+  color: var(--web-color);
+}
+#register .registerCont h3 {
+  text-align: center;
+  font-size: 2em;
+  color: var(--black);
+}
+#register .registerCont .inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#register .registerCont .inputs .input {
+  position: relative;
+}
+#register .registerCont .inputs .input input {
+  width: 100%;
+  padding: 16px;
+  border: 2px solid var(--light-black);
+  font-size: 1.1em;
+  color: var(--black);
+  padding-right: 50px;
+  transition: all 0.5s;
+}
+#register .registerCont .inputs .input input:focus {
+  border: 2px solid var(--web-color);
+}
+#register .registerCont .inputs .input i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+  font-size: 1.3em;
+  cursor: pointer;
+}
+#register .registerCont .report {
+  display: flex;
+  justify-content: space-between;
+}
+#register .registerCont .report p {
+  color: var(--black);
+}
+#register .registerCont .report .clearAllValues {
+  color: var(--web-color);
+  text-decoration: underline;
+  cursor: pointer;
+}
+#register .registerCont .buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#register .registerCont .buttons button {
+  width: 100%;
+  padding: 16px;
+  font-size: 1.2em;
+  cursor: pointer;
+  background: var(--white);
+  border: 2px solid var(--web-color);
+  color: var(--web-color);
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+#register .registerCont .buttons button:hover {
+  background: var(--web-color);
+  color: var(--white);
+}
+#register .registerCont .buttons div {
+  width: 100%;
+  padding: 16px;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.1);
+  border: 2px solid var(--black);
+  border-radius: 5px;
+}
+#register .registerCont .buttons div span {
+  font-size: 1.2em;
+  color: var(--black);
+}
+#register .registerCont .buttons div span a {
+  color: var(--web-color);
+}
+
 .responsiveMenu {
   display: none;
 }

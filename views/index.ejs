@@ -28,7 +28,7 @@
             <ul class="icons">
                 <li><i class="fa-regular fa-heart"></i></li>
                 <li><i class="fa-solid fa-cart-shopping"></i></li>
-                <li><i class="fa-regular fa-user"></i></li>
+                <li class="userBtn"><i class="fa-regular fa-user"></i></li>
                 <li class="menuBtn"><i class="fa-solid fa-bars"></i></li>
             </ul>
         </div>
@@ -57,6 +57,51 @@
                 </div>
                 <p>Samsa was a travelling salesman - and above it there hung a picture that he had recently cut out of
                     an illustrated magazine and housed in a nice, gilded frame.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="register">
+        <form class="registerCont">
+            <div class="top">
+                <a class="logo" href="/home">
+                    <img src="./images/logo1.png" alt="logo">
+                    <h3>CosmeticL</h3>
+                </a>
+                <i class="fa-solid fa-xmark closeRegister"></i>
+            </div>
+            <h3>Let's start a new great day</h3>
+
+            <div class="inputs">
+                <div class="input">
+                    <input class="nameR" type="text" placeholder="enter your name *" title="Larisa" required>
+                    <i class="fa-regular fa-user"></i>
+                </div>
+                <div class="input">
+                    <input class="surnameR" type="text" placeholder="enter your surname" title="Surname" required>
+                    <i class="fa-regular fa-address-book"></i>
+                </div>
+                <div class="input">
+                    <input type="email" placeholder="enter your email *" title="email111@gmail.com" required>
+                    <i class="fa-regular fa-envelope"></i>
+                </div>
+                <div class="input">
+                    <input type="password" placeholder="enter your password *" required>
+                    <i class="fa-solid fa-eye-slash passwordBtn"></i>
+                </div>
+                <div class="input">
+                    <input type="password" placeholder="again your password *" required>
+                    <i class="fa-solid fa-eye-slash passwordBtn"></i>
+                </div>
+            </div>
+
+            <div class="report">
+                <p>* Partadir Lracman Dashter en</p>
+                <p class="clearAllValues">Clear All</p>
+            </div>
+
+            <div class="buttons">
+                <button class="registerBtn">Register Now</button>
             </div>
         </div>
     </div>
@@ -216,6 +261,47 @@
             card.addEventListener('mouseleave', () => {
                 clearInterval(setIntervalId);
             });
+        })
+
+        const userBtn = document.querySelector('.userBtn');
+        const register = document.getElementById('register');
+        const closeRegister = document.querySelector('.closeRegister');
+        const clearAllValues = document.querySelector('.clearAllValues');
+        const passwordBtn = document.querySelectorAll('.passwordBtn');
+
+        clearAllValues.addEventListener('click', () => {
+            register.querySelectorAll('input').forEach(input => input.value = '');
+        })
+
+        passwordBtn.forEach(btn => {
+            btn.addEventListener('click', () => {
+                console.log(btn.parentElement.querySelector('input').type)
+                if(btn.parentElement.querySelector('input').type === 'password') {
+                    btn.parentElement.querySelector('input').setAttribute('type', 'text');
+                    btn.classList.add('fa-eye');
+                    return;
+                }
+
+                btn.classList.remove('fa-eye');
+                btn.parentElement.querySelector('input').type = 'password';
+            })
+        })
+
+        userBtn.addEventListener('click', () => {
+            register.classList.add('active');
+        })
+
+        closeRegister.addEventListener('click', () => {
+            register.classList.remove('active');
+        })
+
+        register.addEventListener('click', (evn) => {
+            console.log(evn.target.idName);
+        })
+
+        document.querySelector('form').addEventListener('submit', (evn) => {
+            evn.preventDefault();
+            alert(`Hello ${document.querySelector('.nameR').value} - ${document.querySelector('.surnameR').value}`)
         })
     </script>
 </body>
